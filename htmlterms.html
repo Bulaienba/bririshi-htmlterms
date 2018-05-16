@@ -1,0 +1,258 @@
+<!--
+
+Exercise 1:
+
+Define these terms and what are they used for
+Create repo
+
+HTML5 terms
+section
+article
+p tag
+div
+
+image
+video
+audio
+
+CSS - what is it used for
+
+Difference between html5 and html
+
+Links to w3
+
+Add JS to make the program do something
+
+-->
+
+<html>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+
+  <head>
+
+
+    <title>Definitions of HTML5 and CSS Terms</title>
+
+    <style>
+
+    body {
+      background-image: url(https://c.pxhere.com/photos/b0/35/ocean_water_black_and_white_background_black_grey-1054633.jpg!d);
+      background-size: cover;
+      font-family: monospace;
+      margin-top: 50px;
+      margin-left: 50px;
+      margin-right: 100px;
+    }
+    h1 {
+      margin-left: 10px;
+    }
+    h2 {
+      padding-top: 15px;
+    }
+    section {
+      margin-left: 100px;
+      padding-top: 0px;
+    }
+    div {
+      margin-left: 10px;
+      padding-top: 0px;
+      float: left;
+    }
+    a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+
+    }
+    a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+    }
+    a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+    }
+
+    .header {
+      margin-left: -50px;
+      padding-top: 20px;
+    }
+
+    .top-header {
+      position: fixed;
+      top: 0;
+      z-index: 1;
+      width: 100%;
+      background-color: grey;
+      margin-left: -50px;
+    }
+    .progress-container {
+      width: 100%;
+      height: 8px;
+      background: #ccc;
+      float: none;
+      margin-top: 25px;
+      margin-left: 0px;
+    }
+
+    .progress-bar {
+      height: 8px;
+      background: white;
+      margin-left: -10px;
+      float: none;
+    }
+
+    button {
+      background-color: black;
+      margin-top: 250px;
+      margin-left: -150px;
+      float: left;
+      position: fixed;
+    }
+
+    #feedback {
+      margin-top: 250px;
+      margin-left: -150px;
+      float: left;
+      position: fixed;
+
+    }
+
+
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdJaoHzKqsVJT-6XbbMDeTh901x1WD9tMtnWCpnXLnftfUQsQ/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+
+    </style>
+  </head>
+
+
+  <body text="white">
+    <div class="top-header">
+      <h1>definitions of html5 and css terms</h1>
+      <div class="progress-container">
+    </div>
+
+  </div>
+
+    <article>
+
+
+        <section>
+
+
+          <button onclick="toggle_div_feedback('feedbacksection');">Click me</button>
+          <p id="feedback">Feedback</p>
+
+
+
+          <div class="header">
+          <h2>how to organize a webpage</h2>
+          </div>
+          <div>
+            <h2>article</h2>
+            <p>an article represents an independent section of a website that
+              can potentially be placed on its own on another site without
+              losing context.</p>
+
+            <h2>section</h2>
+            <p>a section helps to organize a webpage.  within each section
+              similar content can be placed.  the difference between articles
+              and sections is confusing (for me at least!).  i think of
+              sections as nesting within an article.  put another way, i think
+              of the article as a book and the sections as the chapters...
+              hopefully that makes sense.</p>
+
+
+            <h2>div</h2>
+            <p>a div can be used to orgnize a webpage as well.  now i'm even
+              more confused on the difference between a section and a div.
+              i'm going to think of a div as within a section.  so it goes
+              article, section, div.</p>
+
+            <h2>p tag</h2>
+            <p>the p tag represents a block of text or a paragraph.  in fact,
+              this block of text is written with a p tag (and so are the other
+              blocks of text you see on the page). </p>
+
+          </div>
+        </section>
+        <section>
+            <div class="header">
+            <h2>adding fun stuff to your webpage</h2>
+            </div>
+            <div>
+              <h2>image</h2>
+              <p>an image is used to improve the experience of a webpage.
+                instead of explaining how amazing a place is I could just
+                place a picture.</p>
+              <p>here's a picture of Angkor Wat, Cambodia, at sunrise.  it's an
+                amazing place.  if you're interested in going, make sure to get
+                there 1 hour before sunrise for a good spot. i recommend a
+                guide to show you around; a good guide will also take great
+                pictures.  tip: make sure to use vertical pano for great shots
+                up close.</p>
+
+              <img src="http://lh3.googleusercontent.com/B6BXx9tJwsXqh1z-ouGawlVvA33ZyLZZca56SZCz3BBhu2tQHN8kCjClYYxpWsFF_v4w66zO=w128-h128-n-no-v1" height="200" width="300" style="margin:5px 50px">
+
+              <h2>audio</h2>
+              <p>html5 provides the cool built-in functionality to allow
+                audio files to be played directly from the browser without
+                a plug in.</p>
+              <p>audio files support content by allowing a recording to be
+                played, words to be pronounced in another language, and sharing
+                content that was only recorded via audio</p>
+              <p lang="zh-Hans">你喜环学中文吗?</p>
+              <audio controls>
+              <source src="http://s3.amazonaws.com/chinesepod.com/0003/428a26f10e751645839de800475443b7f3a990ca/mp3/chinesepod_A0003pb.mp3">
+              </audio>
+              <h2>video</h2>
+              <p>finally, like audio, html5 now allows video to be played right
+                from the browser!  no flash or other plugins! there are also
+              iframes which are easy to use.  here i'm using copying and pasting
+            embedded code from youtube.</p>
+              <iframe width="320" height="180" src="https://www.youtube.com/embed/IBPSw5NAz5s" frameborder="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+          </div>
+        </section>
+        <section>
+            <div class="header">
+            <h2>by the way, what is css?</h2>
+            </div>
+            <div>
+              <p>css easily allows different types of visual enhancements such
+                as color, images, fonts.  it also allows easy organization of
+                everything on the webpage.  without css it would be like a
+                messy house with white walls and without furniture, flooring,
+                and other design fixtures.</p>
+              <p>webpages used to look like this...this is cnn's website from 2000</p>
+              <img src="https://cdn.cnn.com/cnnnext/dam/assets/150102183958-01-cnn-homepage-1995-super-169.jpg" width="400" height="200" style="margin:5px 50px">
+              <p>webpages now look way better because of css...this is cnn's website today</p>
+              <img src="https://cdn.cnn.com/cnnnext/dam/assets/150824065516-2015-homepage-super-169.jpg" width="400" height="200" style="margin:5px 50px">
+            </div>
+        </section>
+        <section>
+            <div class="header">
+            <h2>what do you think of this webpage?  what should I change or add? </h2>
+            </div>
+            <div>
+            <h2></h2>
+            </div>
+
+        </section>
+      </body>
+
+      <script>
+      // progress bar
+      window.onscroll = function() {myFunction()};
+
+      function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+      }
+      </script>
+    </article>
+</html>
