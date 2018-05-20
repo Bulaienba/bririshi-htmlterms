@@ -104,7 +104,9 @@ Add JS to make the program do something
       float: none;
     }
 
-
+    form {
+      float: left;
+    }
 
 
 
@@ -213,25 +215,19 @@ Add JS to make the program do something
         </section>
         <section>
             <div class="header">
-            <h2>what do you think of this webpage?  what should I change or add? </h2>
+            <h2>on a scale of 1-5 (5 is best), what do you think of this webpage?</h2><br>
+            <form>
+              <input type="radio" name="choice" value="1">1
+            </form>
             </div>
-            <div>
-            <h2></h2>
-            </div>
+
+
+          </div>
+
 
         </section>
       </body>
 
-      <script>
-      // progress bar
-      window.onscroll = function() {myFunction()};
 
-      function myFunction() {
-        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        var scrolled = (winScroll / height) * 100;
-        document.getElementById("myBar").style.width = scrolled + "%";
-      }
-      </script>
     </article>
 </html>
