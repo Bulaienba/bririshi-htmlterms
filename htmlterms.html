@@ -215,10 +215,22 @@ Add JS to make the program do something
         </section>
         <section>
             <div class="header">
-            <h2>on a scale of 1-5 (5 is best), what do you think of this webpage?</h2><br>
+            <h2>did this webpage help you?</h2><br>
             <form>
-              <input type="radio" name="choice" value="1">1
+                <input type="radio" name="choice" value="1">not at all
+                <input type="radio" name="choice" value="2">a little helpful
+                <input type="radio" name="choice" value="3">somewhat helpful
+                <input type="radio" name="choice" value="4">very helpful
+                <input type="radio" name="choice" value="5">extremely helpful<br><br>
+                <input type="submit" name="Submit" onclick="formsubmitted()">
+
+                <script>
+                  function formsubmitted() {
+                    alert("Thank you for submitting your feedback!");
+                  }
+                </script>
             </form>
+
             </div>
 
 
