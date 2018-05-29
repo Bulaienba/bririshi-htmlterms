@@ -1,6 +1,20 @@
+
+// survey form submitted alert
+
+
 function formsubmitted() {
-  alert("Thank you for submitting your feedback!");
+  alert("Thank you for your feedback!");
 }
+
+//display input box
+
+var inputBox = document.getElementById('free form');
+
+inputBox.onkeyup = function() {
+  document.getElementById('printchatbox').innerHTML = inputBox.value;
+}
+
+
 
 
 // progress bar
