@@ -109,6 +109,8 @@ Add JS to make the program do something
     }
 
 
+
+
     </style>
 
     <script type="text/javascript" src="script.js"></script>
@@ -219,21 +221,18 @@ Add JS to make the program do something
             <div class="header">
             <h2>did this webpage help you?</h2><br>
             <form>
-                <input type="radio" name="1" value="1">not at all
-                <input type="radio" name="2" value="2">a little helpful
-                <input type="radio" name="3" value="3">somewhat helpful
-                <input type="radio" name="4" value="4">very helpful
-                <input type="radio" name="5" value="5">extremely helpful<br><br>
-                <input type="submit" name="Submit" onclick="formsubmitted()">
-
-
+                <input type="radio" name="1" value="1" id="ranking">not at all
+                <input type="radio" name="2" id="ranking">a little helpful
+                <input type="radio" name="3" id="ranking">somewhat helpful
+                <input type="radio" name="4" id="ranking">very helpful
+                <input type="radio" name="5" id="ranking">extremely helpful<br><br>
+                Tell us more.<input type="text"  id="free form"><br><br>
+                <input type="submit" name="Submit" onclick="formsubmitted();"/>
             </form>
 
             </div>
 
-
-          </div>
-
+            <div class='printchatbox' id='printchatbox'></div>
 
         </section>
       </body>
